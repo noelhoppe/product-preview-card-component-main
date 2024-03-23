@@ -11,14 +11,12 @@
 </head>
 <body class="bg-orange-50 min-h-screen flex justify-center items-center">
   <main class="m-8 bg-white grid grid-cols-1 md:grid-cols-2 md:max-w-screen-md rounded-3xl gap-5">
-    <div>
-      <picture>
-        <!-- Can I use Tailwind classes in <source media="(min-width:sm)" srcset="images/image-product-desktop.jpg">? -->
-        <source media="(min-width: 768px)" srcset="images/image-product-desktop.jpg">
-        <source media="(min-width: 0px)" srcset="images/image-product-mobile.jpg">
-        <img class="rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none object-cover" src="images/image-product-mobile.jpg" alt="Gabrielle Essence Eau de Parfum Product Image">
-      </picture>
-    </div>
+    <picture>
+      <!-- Can I use Tailwind classes in <source media="(min-width:sm)" srcset="images/image-product-desktop.jpg">? -->
+      <source media="(min-width: 768px)" srcset="images/image-product-desktop.jpg">
+      <source media="(min-width: 0px)" srcset="images/image-product-mobile.jpg">
+      <img class="rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none object-cover" src="images/image-product-mobile.jpg" alt="Gabrielle Essence Eau de Parfum Product Image">
+    </picture>
     <div class="flex flex-col gap-5 my-4 p-4">
       <p class="uppercase tracking-widest text-slate-500">Perfume</p>
       <h1 class="text-black font-black text-5xl text-balance">Gabrielle Essence Eau De Parfum</h1>
